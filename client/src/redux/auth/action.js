@@ -10,21 +10,21 @@ import {
 // signup
 const signupSuccess = (payload) => {
   return {
-    action: SIGNUP_SUCCESS,
+    type: SIGNUP_SUCCESS,
     payload: payload,
   };
 };
 
 const signupFailure = (err) => {
   return {
-    action: SIGNUP_FAILURE,
+    type: SIGNUP_FAILURE,
     payload: err,
   };
 };
 
 const signupPending = (payload) => {
   return {
-    action: SIGNUP_PENDING,
+    type: SIGNUP_PENDING,
     payload: payload,
   };
 };
@@ -32,21 +32,21 @@ const signupPending = (payload) => {
 // login
 const signinSuccess = (token) => {
   return {
-    action: SIGNIN_SUCCESS,
+    type: SIGNIN_SUCCESS,
     payload: token,
   };
 };
 
 const signinFailure = (err) => {
   return {
-    action: SIGNIN_FAILURE,
+    type: SIGNIN_FAILURE,
     payload: err,
   };
 };
 
 const signinPending = (payload) => {
   return {
-    action: SIGNIN_PENDING,
+    type: SIGNIN_PENDING,
     payload: payload,
   };
 };
